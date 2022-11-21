@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <title>VUL.WIKI</title>
+    <meta name='robots' content='max-image-preview:large' />
+	<link rel='dns-prefetch' href='//s.w.org' />
+	<meta name="keywords" content="记录知识">
+	<meta name="description" content="记录知识">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="static/css/media.css">
+</head>
+<body>
+	<header id="header">
+		<div class="header_left">
+		    <img src="static/img/logo.png" alt="小林博客" title="小林博客" style="display:none;">
+			
+		</div>
+		<!--
+		<div class="header_right" id="background_voice">
+			<img src="static/img/unmute.png" title="打开">
+		</div>
+		-->
+	</header>
+	<div id="container">
+		<video id="background_video" loop="" muted=""><source src="static/video/bg.mp4" type="video/mp4"></video>
+		<div id="video_cover" style="display: none;"></div>
+		<div id="overlay"></div>
+		<section id="main_content">
+			<div id="head">
+				<h1>VUL.WIKI</h1>
+				<p class="sub_head">记录、共享、储存</p>
+				<p class="info">（ 主要用于结构化沉淀高价值信息 ）</p>
+			</div>
+			<div id="links">
+				<a href="" target="_blank">漏洞搜索</a>
+				<a href="/" target="_blank">精选书签</a>
+				<a href="/" target="_blank">个人网盘</a>
+				<a href="/" target="_blank">其他</a>
+			</div>
+			<div style="position: absolute;color: white;"></div>
+		</section>
+	</div>
+	<div id="footer">
+		<span class="info">
+			 <p class="copyright">您的IP：<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script type="text/javascript">document.write(returnCitySN["cip"])</script></p> 
+			Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2022&nbsp;&nbsp;VUL.WIKI
+		</span>
+	</div>
+    <script src="static/js/bideo.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/jquery-2.2.4.min.js?ver=2.2.4"></script>
+    <script type="text/javascript">
+    $(document).bind("contextmenu",function(){return false;});	//禁止右键
+    
+    $(document).bind("selectstart",function(){return false;});	//禁止选择
+    
+    document.onkeydown = function(){							//禁止F12
+        if(window.event && window.event.keyCode == 123 || window.event.keyCode== 83 ||window.event.keyCode== 85) {
+                event.keyCode = 0;
+                event.returnValue = false;
+         }
+    }
+    </script>
+</body>
+</html>
