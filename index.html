@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="https://gmpg.org/xfn/11">
     <title>VUL.WIKI</title>
     <meta name='robots' content='max-image-preview:large' />
 	<link type="image/x-icon" href="favicon.ico" rel="icon">
@@ -55,6 +54,8 @@
     <script src="static/js/bideo.js"></script>
     <script src="static/js/main.js"></script>
     <script src="static/js/jquery-2.2.4.min.js?ver=2.2.4"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2YKK752930"></script>
     <script type="text/javascript">
     $(document).bind("contextmenu",function(){return false;});	//禁止右键
     
@@ -75,7 +76,11 @@
 	var x = new Date()
 	document.getElementById('ct').innerHTML = x;
 	display_c();
- 	}
+    	}
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+	gtag('config', 'G-2YKK752930');
     </script>
 </body>
 </html>
